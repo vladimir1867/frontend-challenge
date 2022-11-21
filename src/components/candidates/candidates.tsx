@@ -34,13 +34,19 @@ export function Candidates({
             <div>{Math.round(candidate.score * 10) / 10}</div>
             <div>
               Candidate {index + 1}
-              <input
-                id={candidate.id}
-                onChange={handleSelectChange}
-                checked={candidate.selected ?? false}
-                type="checkbox"
-                disabled={!candidate.selected && maxSelected}
-              />
+              <label aria-label={candidate.id}>
+                <input
+                  name={candidate.id}
+                  role="checkbox"
+                  id={candidate.id}
+                  onChange={handleSelectChange}
+                  checked={candidate.selected ?? false}
+                  aria-checked={candidate.selected ?? false}
+                  type="checkbox"
+                  disabled={!candidate.selected && maxSelected}
+                  value={candidate.id}
+                />
+              </label>
             </div>
           </div>
         ))}

@@ -31,7 +31,7 @@ export default function App() {
       );
       const updatedCandidates = candidates?.map((candidate) => {
         if (candidate.id === id) {
-          return { ...candidate, selected };
+          return { ...candidate, selected: !candidate.selected };
         } else {
           return candidate;
         }
@@ -40,14 +40,8 @@ export default function App() {
         updateCandidate({ ...selectedCandidate, selected });
         updateCandidates(updatedCandidates ?? []);
       }
-
-      if (maxSelected && !selected) {
-        alert(
-          `you have reached maximum selection ${MAX_SELECTIONS}. Please delesect some options for more selections`
-        );
-      }
     },
-    [candidates, maxSelected, updateCandidate, updateCandidates]
+    [candidates, updateCandidate, updateCandidates]
   );
 
   return (

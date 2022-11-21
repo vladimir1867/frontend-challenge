@@ -1,11 +1,10 @@
 .container {
-  height: 90vh;
-  width: 15%;
+  width: 20%;
 }
 
 .candidatesTitle {
   font-weight: bold;
-  border: 2px solid #000;
+  border: 1.5px solid #000;
 }
 
 .candidateElement {
@@ -14,22 +13,17 @@
   padding-top: 5px;
 }
 
-.candidateElement:nth-child(even) {
-  opacity: 0.6;
-}
-
-.candidateElement input {
-  color: green;
-}
-
 .listHeader {
   display: flex;
   justify-content: space-between;
   padding-right: 40px;
+  padding-top: 10px;
+  border-bottom: 1.5px solid #000;
+  margin-bottom: 15px;
 }
 
 .listContainer {
-  height: 90vh;
+  height: 84vh;
   overflow-y: scroll;
 }
 
