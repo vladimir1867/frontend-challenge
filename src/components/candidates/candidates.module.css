@@ -1,5 +1,6 @@
 .container {
-  height: 90vh
+  height: 90vh;
+  width: 15%;
 }
 
 .candidatesTitle {
@@ -10,6 +11,11 @@
 .candidateElement {
   display: flex;
   justify-content: space-between;
+  padding-top: 5px;
+}
+
+.candidateElement:nth-child(even) {
+  opacity: 0.6;
 }
 
 .candidateElement input {
@@ -26,3 +32,4 @@
   height: 90vh;
   overflow-y: scroll;
 }
+

@@ -32,14 +32,16 @@ export function Candidates({
         {candidates.map((candidate, index) => (
           <div className={clsx(styles.candidateElement)} key={candidate.id}>
             <div>{Math.round(candidate.score * 10) / 10}</div>
-            <div>Candidate {index + 1}</div>
-            <input
-              id={candidate.id}
-              onChange={handleSelectChange}
-              checked={candidate.selected ?? false}
-              type="checkbox"
-              disabled={!candidate.selected && maxSelected}
-            />
+            <div>
+              Candidate {index + 1}
+              <input
+                id={candidate.id}
+                onChange={handleSelectChange}
+                checked={candidate.selected ?? false}
+                type="checkbox"
+                disabled={!candidate.selected && maxSelected}
+              />
+            </div>
           </div>
         ))}
       </div>
