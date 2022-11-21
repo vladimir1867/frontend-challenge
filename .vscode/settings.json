@@ -1,0 +1,27 @@
+{
+  "files.exclude": {
+    "**/.eslintcache": true,
+    "**/.stylelintcache": true,
+    "**/.cache/**": true,
+    "**/.git/**": true
+  },
+  "files.watcherExclude": {
+    "**/.eslintcache": true,
+    "**/.stylelintcache": true,
+    "**/.cache/**": true,
+    "**/.git/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
+    "**/node_modules/**": true
+  },
+  "search.exclude": {
+    "**/.eslintcache": true,
+    "**/.stylelintcache": true,
+    "**/.cache/**": true,
+    "**/.git/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
+    "**/node_modules/**": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

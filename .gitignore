@@ -1,0 +1,9 @@
+.env
+.eslintcache
+
+.cache/
+build/
+dist/
+node_modules/
+
+*.tsbuildinfo

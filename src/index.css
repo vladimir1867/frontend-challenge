@@ -1,0 +1,12 @@
+html, body {
+  background-color: #F5F5F5;
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  height: 100%;
+}

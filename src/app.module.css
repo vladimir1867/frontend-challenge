@@ -1,0 +1,20 @@
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem;
+  overflow: auto;
+}
+
+.main .rank {
+  flex: 1;
+}
+
+.main .performance {
+  flex: 3;
+}
+
+.main .performance div:nth-child(2) {
+  overflow: hidden;
+}

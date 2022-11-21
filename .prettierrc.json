@@ -1,0 +1,15 @@
+{
+  "parser": "typescript",
+  "trailingComma": "es5",
+  "arrowParens": "always",
+  "importOrder": [
+    "^node:",
+    "<THIRD_PARTY_MODULES>",
+    "^src(?:/|$)",
+    "^~(?:/|$)",
+    "^\\.\\.(?:/|$)",
+    "^\\.(?:/|$)"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
