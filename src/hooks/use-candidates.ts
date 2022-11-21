@@ -1,3 +1,5 @@
+import { useCallback, useEffect, useState } from "react";
+
 import type { Candidate } from "../resources/candidate";
 
 /**
@@ -41,7 +43,22 @@ async function updateCandidate(
 export function useCandidates(): {
   candidates: Candidate[] | undefined;
   updateCandidate: (candidate: Candidate) => void;
+  updateCandidates: (candidate: Candidate[]) => void;
 } {
-  // TODO: implement useCandidates
-  return { candidates: undefined, updateCandidate: () => {} };
+  const [candidates, setCandidates] = useState<Candidate[] | undefined>();
+
+  const updateCandidates = useCallback(
+    (newCandidates: Candidate[]) => {
+      setCandidates(newCandidates);
+    },
+    [setCandidates]
+  );
+  useEffect(() => {
+    async function fetchData() {
+      const fetchedCandidates = await fetchCandidates();
+      setCandidates(fetchedCandidates);
+    }
+    fetchData();
+  }, [setCandidates]);
+  return { candidates, updateCandidate, updateCandidates };
 }

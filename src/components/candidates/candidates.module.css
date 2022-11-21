@@ -1,0 +1,28 @@
+.container {
+  height: 90vh
+}
+
+.candidatesTitle {
+  font-weight: bold;
+  border: 2px solid #000;
+}
+
+.candidateElement {
+  display: flex;
+  justify-content: space-between;
+}
+
+.candidateElement input {
+  color: green;
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
+.listContainer {
+  height: 90vh;
+  overflow-y: scroll;
+}
