@@ -69,4 +69,16 @@ Similarly, to run tests:
 ```sh
 
 npm test
+```
+
+# Remarks
+
+I have approaced this problem by first understanding the data schema/representation and how it will be scatered across the application, then estimate the required components by dividing the page into multiple sections.
+After that, I focused on how the data will be optained which turned out to be already impelemnted, hence i focused on the persistence, which I achieved by using react local state and heavy usage of react hooks to achieve maximum functionality and optimization. Since there is no specific design and the time is limited, I did not invest more time into the UI but its minimal with very intuitive UX.
+
+I have done this in a bit more than 2 hours.
+
+I struggled with the tests. after completing the challenge, I realized that 2 of the tests are failing hence tried to check. it turns out, I was missing a few things, in particular a label tag to wrap the input tag so as to help the testing library locate the accessible names of the input checkboxes. I googled around for the possible solutions and finally came to a final solution.
+
+
 
